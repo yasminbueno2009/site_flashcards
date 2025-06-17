@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f8f8;
+  color: #111;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo .icon {
+  width: 24px;
+  height: 24px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+section {
+  margin-top: 30px;
+}
+
+.home {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.intro h1 {
+  font-size: 32px;
+  line-height: 1.4;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #111;
+}
+
+/* Flashcards seção */
+
+.baralhos-section {
+  margin-top: 80px;
+  padding-top: 40px;
+  background-color: #f9f9f9;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.baralhos-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Grid de flashcards */
+.flashcard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Flip Card */
+
+.flip-container {
+  width: 250px;
+  height: 180px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flipper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flip-container input:checked + .flipper {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  background: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Formulários */
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.form-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-section input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-section button {
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background 0.3s;
+}
+
+.form-section button:hover {
+  background: #1e40af;
+}
+
+.bio .front, .bio .back {
+  background-color: #dbeafe; /* azul claro */
+  color: #1e3a8a;
+}
+
+.hist .front, .hist .back {
+  background-color: #dcfce7; /* verde claro */
+  color: #065f46;
+}
+
+.geo .front, .geo .back {
+  background-color: #ede9fe; /* roxo claro */
+  color: #5b21b6;
+}
+
+.qui .front, .qui .back {
+  background-color: #fee2e2; /* vermelho claro */
+  color: #991b1b;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>StudyFlash</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/ios-filled/50/2563eb/book.png" alt="logo" class="icon" />
+      StudyFlash
+    </div>
+    <nav>
+      <a href="#home">Início</a>
+      <a href="#baralhos">Meus Flashcards</a>
+      <a href="#criar">Criar Flashcards</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <div class="intro">
+      <h1>Transforme seus estudos<br><strong>em jogos de memória!</strong> ✨</h1>
+      <div class="buttons">
+        <a href="#criar" class="btn btn-primary">Começar Agora</a>
+        <a href="#baralhos" class="btn btn-secondary">Criar meu Primeiro Baralho</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="baralhos" class="baralhos-section">
+    <h2>Meus Flashcards</h2>
+    <div class="flashcard-grid">
+      <label class="flip-container bio">
+  <input type="checkbox" hidden />
+   <div class="flipper">
+    <div class="front">
+      <img class="icon-top" src="https://img.icons8.com/color/48/dna-helix.png" alt="Biologia">
+      <p><strong>O que é mitocôndria?</strong></p>
+    </div>
+    <div class="back">
+      <img class="icon-top" src="https://img.icons8.com/color/48/dna-helix.png" alt="Biologia">
+      <p><strong>Mitocôndria</strong> é a organela responsável pela respiração celular.</p>
+    </div>
+  </div>
+</label>
+
+<label class="flip-container hist">
+  <input type="checkbox" hidden />
+  <div class="flipper">
+    <div class="front">
+      <img class="icon-top" src="https://img.icons8.com/color/48/historical.png" alt="História">
+      <p><strong>Quem foi Napoleão?</strong></p>
+    </div>
+    <div class="back">
+      <img class="icon-top" src="https://img.icons8.com/color/48/historical.png" alt="História">
+      <p>Foi um general francês que se tornou imperador e expandiu o império.</p>
+    </div>
+  </div>
+</label>
+
+<label class="flip-container geo">
+  <input type="checkbox" hidden />
+  <div class="flipper">
+    <div class="front">
+      <img class="icon-top" src="https://img.icons8.com/color/48/globe--v1.png" alt="Geografia">
+      <p><strong>Qual a capital do Canadá?</strong></p>
+    </div>
+    <div class="back">
+      <img class="icon-top" src="https://img.icons8.com/color/48/globe--v1.png" alt="Geografia">
+      <p>Ottawa.</p>
+    </div>
+  </div>
+</label>
+
+<label class="flip-container qui">
+  <input type="checkbox" hidden />
+  <div class="flipper">
+    <div class="front">
+      <img class="icon-top" src="https://img.icons8.com/color/48/test-tube.png" alt="Química">
+      <p><strong>Qual a fórmula da água?</strong></p>
+    </div>
+    <div class="back">
+      <img class="icon-top" src="https://img.icons8.com/color/48/test-tube.png" alt="Química">
+      <p>A fórmula da água é H<sub>2</sub>O.</p>
+    </div>
+  </div>
+</label>
+</section>
+
+  <div class="forms-container">
+    <section id="criar" class="form-section">
+      <h2>Criar Novo Flashcard</h2>
+      <form>
+        <input type="text" placeholder="Digite a pergunta" required />
+        <input type="text" placeholder="Digite a resposta" required />
+        <button type="submit">Criar Flashcard</button>
+      </form>
+    </section>
+
+    <section id="login" class="form-section">
+      <h2>Entrar</h2>
+      <form>
+        <input type="email" placeholder="E-mail" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>
